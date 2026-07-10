@@ -98,7 +98,7 @@ const projects = ref([
     description: "Full online store with cart and checkout",
     image: "/project1.png",
     tags: ["Vue", "Node.js", "MongoDB"],
-    livelink: "/",
+    livelink: "https://royalgoods.onrender.com",
     codelink: "/",
   },
   
