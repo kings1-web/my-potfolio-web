@@ -1,0 +1,31 @@
+/* src/style.css */
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind companents;
+@tailwind ultilities;
+/* CRITICAL: Tells Tailwind v4 to look for the .dark class on the <html> tag */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* 1. Define your custom theme colors */
+  --color-secondary: #FFEB00;
+  --color-primary: #000957;
+}
+
+/* 2. Define your custom text-stroke utilities */
+@utility stroke-text {
+  -webkit-text-stroke-width: 1.4px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: var(--color-secondary);
+}
+
+@utility text-stroke-primary {
+  -webkit-text-stroke-color: var(--color-primary);
+}
+
+@utility text-stroke-secondary {
+  -webkit-text-stroke-color: var(--color-secondary);
+}
+
+
