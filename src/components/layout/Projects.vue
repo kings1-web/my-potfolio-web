@@ -50,7 +50,7 @@
         <ProjectCard
           :title="project.title"
           :description="project.description"
-          :image="`src/assets/images` + project.image"
+          :image="project.image"
           :tags="project.tags"
           :livelink="project.livelink"
           :codelink="project.codelink"
@@ -81,13 +81,6 @@ const prevBtn = ref(null);
 const nextBtn = ref(null);
 
 
-// -----------------------------
-// Navigation config (FIXED)
-// -----------------------------
-/*const navigationOptions = {
-  prevEl: ".swiper-prev",
-  nextEl: ".swiper-next",
-};*/
 
 // -----------------------------
 // Project data (FIXED)
@@ -96,7 +89,7 @@ const projects = ref([
   {
     title: "E-commerce Website",
     description: "Full online store with cart and checkout",
-    image: "/project1.png",
+     image: "/images/project1.png", // Added '/images' here
     tags: ["Vue", "Node.js", "MongoDB"],
     livelink: "https://royalgoods.onrender.com",
     codelink: "/",
@@ -105,7 +98,7 @@ const projects = ref([
   {
     title: "Blog App",
     description: "Blog platform with authentication",
-    image: "/project3.png",
+    image: "/images/project3.png",
     tags: ["Vue", "Express", "MongoDB"],
     livelink: "/",
     codelink: "/",
@@ -113,7 +106,7 @@ const projects = ref([
   {
     title: "Portfolio Website",
     description: "Personal portfolio with animations",
-    image: "/project2.png",
+    image: "/images/project2.png",
     tags: ["Vue", "Tailwind"],
     livelink: "/",
     codelink: "/",
@@ -121,7 +114,7 @@ const projects = ref([
   {
     title: "Portfolio Website",
     description: "Personal portfolio with animations",
-    image: "/project2.png",
+    image: "/images/project2.png",
     tags: ["Vue", "Tailwind"],
     livelink: "/",
     codelink: "/",
@@ -129,7 +122,7 @@ const projects = ref([
   {
     title: "Portfolio Website",
     description: "Personal portfolio with animations",
-    image: "/project2.png",
+    image: "/images/project2.png",
     tags: ["Vue", "Tailwind"],
     livelink: "/",
     codelink: "/",
@@ -137,7 +130,7 @@ const projects = ref([
   {
     title: "Portfolio Website",
     description: "Personal portfolio with animations",
-    image: "/project2.png",
+    image: "/images/project2.png",
     tags: ["Vue", "Tailwind"],
     livelink: "/",
     codelink: "/",
@@ -145,33 +138,33 @@ const projects = ref([
    {
     title: "E-commerce Website",
     description: "Full online store with cart and checkout",
-    image: "/project1.png",
+    image: "/images/project1.png",
     tags: ["Vue", "Node.js", "MongoDB"],
-    livelink: "/",
+    livelink: "https://royalgoods.onrender.com",
     codelink: "/",
   },
    {
     title: "E-commerce Website",
     description: "Full online store with cart and checkout",
-    image: "/project1.png",
+    image: "/images/project1.png",
     tags: ["Vue", "Node.js", "MongoDB"],
-    livelink: "/",
+    livelink: "https://royalgoods.onrender.com",
     codelink: "/",
   },
    {
     title: "E-commerce Website",
     description: "Full online store with cart and checkout",
-    image: "/project1.png",
+    image: "/images/project1.png",
     tags: ["Vue", "Node.js", "MongoDB"],
-    livelink: "/",
+    livelink: "https://royalgoods.onrender.com",
     codelink: "/",
   },
    {
     title: "E-commerce Website",
     description: "Full online store with cart and checkout",
-    image: "/project1.png",
+    image: "/images/project1.png",
     tags: ["Vue", "Node.js", "MongoDB"],
-    livelink: "/",
+    livelink: "https://royalgoods.onrender.com",
     codelink: "/",
   },
 ]);
